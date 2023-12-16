@@ -39,7 +39,6 @@ public class Order {
         this.name = name;
     }
 
-    // Methods to modify the items list
     public void addItem(MenuItem item) {
         items.add(item);
     }
@@ -48,12 +47,11 @@ public class Order {
         items.remove(item);
     }
 
-    // Static method to get all orders
     public static List<Order> getAllOrders() {
         return new ArrayList<>(allOrders); // Return a copy to preserve encapsulation
     }
 
-    // Optional: Method to display order details
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
